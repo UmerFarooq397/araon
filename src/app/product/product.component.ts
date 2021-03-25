@@ -8,6 +8,7 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./product.component.scss']
 })
 export class ProductComponent {
+
   title = 'angular-stripe';
   priceId = 'price_1IXWjmKIi9cViIYizqzYff35';
   product = {

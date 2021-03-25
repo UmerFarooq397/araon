@@ -125,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "angular-stripe"
+  "defaultProject": "angular-stripe",
+  "cli": {
+    "analytics": "208ef085-e0f6-44c7-94eb-f56875a40518"
+  }
 }

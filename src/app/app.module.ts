@@ -6,7 +6,8 @@ import { ProductComponent } from './product/product.component';
 import { SuccessComponent } from './success/success.component';
 import { FailureComponent } from './failure/failure.component';
 import { RouterModule } from '@angular/router';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import Web3 from 'web3';
 @NgModule({
   declarations: [
     AppComponent,
@@ -15,7 +16,7 @@ import { RouterModule } from '@angular/router';
     FailureComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,ReactiveFormsModule,FormsModule,
     RouterModule.forRoot([
       {
         path: '',
@@ -35,7 +36,7 @@ import { RouterModule } from '@angular/router';
       }
     ], { useHash: true })
   ],
-  providers: [],
+  providers: [Web3],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

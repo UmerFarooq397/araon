@@ -12,8 +12,12 @@
             <h1 class="alert">Success!</h1>
             <p>yay, your box of joyfulness is on your way.</p>
         </div>
-        <button class="button-box" [routerLink]="['/']">
-            <h1 class="green">continue</h1>
+        <div class="inputfield">
+            <label for="" >Public Address To transfer token</label>
+            <input type="text" class="form-control" [(ngModel)]="model.publicaddrees" name="publicaddrees" #publicaddrees="ngModel" >
+        </div>
+        <button class="button-box"  type="submit" (click)="onSubmit()"> 
+            <h1 class="green">Transfer</h1>
         </button>
     </div>
 </div>
