@@ -1,5 +1,5 @@
 <div id="container">
-    <div id="success-box">
+    <div id="success-box" *ngIf="showdiv">
         <div class="dot"></div>
         <div class="dot two"></div>
         <div class="face">
@@ -10,14 +10,8 @@
         <div class="shadow scale"></div>
         <div class="message">
             <h1 class="alert">Success!</h1>
-            <p>yay, your box of joyfulness is on your way.</p>
+            <p>You have successfully got 50 ELON Token</p>
         </div>
-        <div class="inputfield">
-            <label for="" >Public Address To transfer token</label>
-            <input type="text" class="form-control" [(ngModel)]="model.publicaddrees" name="publicaddrees" #publicaddrees="ngModel" >
-        </div>
-        <button class="button-box"  type="submit" (click)="onSubmit()"> 
-            <h1 class="green">Transfer</h1>
-        </button>
+       
     </div>
 </div>

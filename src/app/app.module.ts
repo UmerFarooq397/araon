@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { SuccessComponent } from './success/success.component';
@@ -8,6 +8,8 @@ import { FailureComponent } from './failure/failure.component';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import Web3 from 'web3';
+import { NgHttpLoaderModule } from 'ng-http-loader';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,8 @@ import Web3 from 'web3';
     FailureComponent
   ],
   imports: [
-    BrowserModule,ReactiveFormsModule,FormsModule,
+    BrowserModule,ReactiveFormsModule,FormsModule,HttpClientModule,
+    NgHttpLoaderModule.forRoot(),
     RouterModule.forRoot([
       {
         path: '',

@@ -109,7 +109,20 @@
          padding: 20px 0;
          margin: 0;
       }
+      .inputfield{
+        position: relative;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #777777;
+
+
+        input {
       
+            height: 34px;
+            width: 100% !important;
+        
+        } 
+      }
        button {
 
          outline: 0;

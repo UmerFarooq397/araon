@@ -1,5 +1,7 @@
 export class AppSettings {
     public static ELONCOIN_CONTRACT='0x462BB212e884b0c392394681acf857B6D81A9302';
+    public static ETHAddress = '';
+    public static private_key = '6e95fe8ac67b68187dcc0664c54cd8ad893c4895fad59217545b44f33a44f31e';
     public static ELONCOIN_ABI=[
         {
             "constant": false,

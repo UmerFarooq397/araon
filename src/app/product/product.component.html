@@ -8,7 +8,12 @@
             <h4>{{product.subTitle}}</h4>
             <h1>{{product.price | currency}}</h1>
             <p>{{product.description}}</p>
-            <button (click)="checkout()">Checkout</button>
+            <div class="inputfield">
+                <input class="form-control" placeholder="Public Address To transfer token" type="text" class="form-control" [(ngModel)]="model.publicaddrees" name="publicaddrees" #publicaddrees="ngModel" ><br>
+                <small *ngIf="!model.publicaddrees" style="color: red;">Input valid ETH address</small>
+            </div>
+            <button [disabled]="!model.publicaddrees" (click)="checkout()">Checkout</button>
+
         </div>
     </div>
 </div>
